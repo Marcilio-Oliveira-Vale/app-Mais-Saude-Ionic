@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color transparent>            
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="conteudo">
+  <ion-grid align-items-center col-12 col-lg-4 col-xl-4 class="shading">
+    <ion-grid class="grid-logo">
+      <ion-row shading align-items-center justify-content-center>
+        <ion-col align-self-center col-12 col-lg-4 col-xl-4>
+          <img src="../../assets/imgs/icon.png" />        
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid >
+      <ion-row align-items-center justify-content-center>
+        <ion-col >
+    <ion-list class="conteudo-input">
+      <p class="text">Por favor, preencha seu login e <br>
+        senha para entrar:</p>
+      <ion-item >
+        <ion-label></ion-label>
+        <ion-input placeholder="Email" type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item class="margem-input-top">
+        <ion-label> </ion-label>
+        <ion-input placeholder="Senha" type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+  
+      <button class=" btn margem-btnlink-top margem-btn-button" ion-button block color="vinho" (click)="entrar()">Entrar</button>
+    
+  
+      <button class="btn-link margem-btnlink-top" ion-button block clear color="primary" outline (click)="cadastro()">Cadastro</button>
+  
+      <button class="btn-link margem-btnlink-top"ion-button block clear color="primary" outline (click)="esqueciSenha()">Esqueci a senha</button>
+  
+  
+    </ion-list>
+  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-grid>
+</ion-content>
+
+

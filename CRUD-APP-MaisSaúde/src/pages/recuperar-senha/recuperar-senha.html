@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Recuperar senha</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="conteudo" padding>
+  <ion-grid align-items-center col-12 col-lg-4 col-xl-4 class="shading">
+  <ion-grid align-itens-center justify-content-center class="grid-logo">
+    <ion-row>
+      <ion-col col-12 align-self-center>
+        <img src="../../assets/imgs/icon.png" class="img-logo">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="grid-list">
+    <ion-row align-items-center justify-content-center>
+      <ion-col>
+        <ion-list class="conteudo-input">
+
+          <ion-item class="margem-input-top conteudo-input btn-link">
+            <ion-input placeholder="Email" type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+      
+          <button class="margem-btn-button btn" ion-button block primary (click)="Recuperar()">Recuperar</button>
+      
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-grid>
+</ion-content>
+
+
+  
